@@ -9,7 +9,7 @@
     "client/node_modules"
   ],
   "scripts": {
-    "start": "",
+    "start": "gunicorn wsgi:app",
     "heroku-postbuild": "cd client && npm run build"
   },
   "dependencies": {

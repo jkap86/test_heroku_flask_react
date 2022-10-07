@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app $PORT || 5000
+web: bin/boot

@@ -9,6 +9,6 @@
     "client/node_modules"
   ],
   "scripts": {
-    "start": "cd client && npm install && npm run build"
+    "start": "cd client && npm install && npm run build && npm start"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "name": "test_heroku_flask_react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "cacheDirectories": [
+    "client/node_modules"
+  ],
+  "scripts": {
+    "start": "cd server && gunicorn wsgi:app -b :$PORT",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  }
+}

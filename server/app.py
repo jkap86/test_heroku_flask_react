@@ -12,4 +12,4 @@ app.route('/')
 
 
 def index():
-    return app.send_from_directory('index.html')
+    return app.send_static_file('index.html')
